@@ -1,7 +1,7 @@
 
 // Create timer with two minute limit
 
-var number = 10;
+var number = 3;
   var intervalId;
 
   function run() {
@@ -13,6 +13,7 @@ var number = 10;
     $("#timer").html("<h2>" + number + "</h2>");
       if( number === 0) {
         clearInterval(intervalId);
+        window.location.href = "index2.html";
       }
   }
 
