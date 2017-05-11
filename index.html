@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trivia Game!</title>
+    <meta charset="UTF-8">
+    <title>Fast and Furious Trivia</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+
+<!--Title & Jumbotron-->
+	<div class="wrapper">
+	<img src="http://walls4k.com/wallpapers/6041.jpg">
+	    <div class="row">
+	    	<div class="col-md-1"></div>
+	         	<div class="col-md-10 text-center">
+	            	<div class="jumbotron">
+					  	<h1>Fast and Furious Trivia!</h1>
+					  	<h4>Finish before the timer Ends!</h4>
+					  		<div id="timer"></div>
+					</div>
+				<div class="col-md-1"></div>
+            </div>
+	    </div>
+<!--Question 1-->
+		<div class="row">
+	    	<div class="col-md-1"></div>
+	         	<div class="col-md-10 text-center">
+	         	<h3>What is Dominic's Last name?</h3>
+		         	<label class="radio-inline-1">
+							  <input type="radio" name="question-0" id="inlineRadio1" value="A"> Torretto
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="question-0" id="inlineRadio2" value="B"> Spallino
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="question-0" id="inlineRadio3" value="C"> Wilson
+							</label>
+				<div class="col-md-1"></div>
+            </div>
+	    </div>
+<!--Question 2-->
+		<div class="row">
+	    	<div class="col-md-1"></div>
+	         	<div class="col-md-10 text-center">
+	         	<h3>What kind of car does Bryan (Paul Walker) drive in the first Fast and Furious?</h3>
+		         	<label class="radio-inline-2">
+							  <input type="radio" name="question-1" id="inlineRadio4" value="A"> Nissan Skyline
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="question-1" id="inlineRadio5" value="B"> Dodge Charger
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="question-1" id="inlineRadio6" value="C"> Toyota Supra
+							</label>
+				<div class="col-md-1"></div>
+            </div>
+	    </div>
+<!--Question 3-->
+		<div class="row">
+	    	<div class="col-md-1"></div>
+	         	<div class="col-md-10 text-center">
+	         	<h3>Where does the third Fast and Furious movie Take place?</h3>
+		         	<label class="radio-inline-3">
+							  <input type="radio" name="question-2" id="inlineRadio7" value="A"> Rio De Janeiero, Brazil
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="question-2" id="inlineRadio8" value="B"> Los Angeles, California
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="question-2" id="inlineRadio9" value="C"> Tokyo, Japan
+							</label>
+				<div class="col-md-1"></div>
+            </div>
+	    </div>
+<!--Question 4-->
+		<div class="row">
+	    	<div class="col-md-1"></div>
+	         	<div class="col-md-10 text-center">
+	         	<h3>Which Famous Rapper/Actor is not in any Fast and Furious Movies?</h3>
+		         	<label class="radio-inline-4">
+							  <input type="radio" name="question-3" id="inlineRadio10" value="A"> Lil' Wayne
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="question-3" id="inlineRadio11" value="B"> Ja Rule
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="question-3" id="inlineRadio12" value="C"> Ludacris
+							</label>
+				<div class="col-md-1"></div>
+            </div>
+	    </div>
+<!--Question 5-->
+		<div class="row">
+	    	<div class="col-md-1"></div>
+	         	<div class="col-md-10 text-center">
+	         	<h3>In which movie do Dominic and Bryan steal a bank vault by towing it?</h3>
+		         	<label class="radio-inline-5">
+							  <input type="radio" name="question-4" id="inlineRadio13" value="A"> Fast and Furious 4
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="question-4" id="inlineRadio14" value="B"> Fast and Furious 5
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="question-4" id="inlineRadio15" value="C"> Fast and Furious 7
+							</label>
+				<div class="col-md-1"></div>
+            </div>
+	    </div>
+<!--Space Holder-->
+<div class="row">
+	    	<div class="col-md-1"></div>
+	         	<div class="col-md-10 text-center">
+								<br>
+			<button onclick="returnScore()">View Results</button>
+	         					<br>
+	         					<br>
+	         		<div id="correct">Correct Answers:</div>
+	         		<br>
+	         		<div id="incorrect">Incorrect Answers:</div>
+	         		<br>
+	         		<div id="unanswered">Unanswered:</div>
+	         		<br>
+				<div class="col-md-1"></div>
+            </div>
+	    </div>
+
+<!--Closing Div-->
+</div>
+<!--Footer-->
+	<div class="row">
+		<div class="col-lg-12">
+			 <footer>
+        <p>&copy; Copyright 2017 Kevin Valente</p>
+    		</footer>
+    	</div>
+    </div>
+<!--Link for JS-->
+ <script type="text/javascript" src="assets/Javascript/game.js"></script>
+</body>
+
+</html>
