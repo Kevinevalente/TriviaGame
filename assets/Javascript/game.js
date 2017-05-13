@@ -1,8 +1,15 @@
 
+
+
 // Create timer with two minute limit
 
-var number = 3;
+
+
+var number = 120;
   var intervalId;
+
+
+
 
   function run() {
     intervalId = setInterval(decrement, 1000);
